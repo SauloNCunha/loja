@@ -5,7 +5,11 @@
         <link href="css/bootstrep.css" rel="stylesheet">
         <link href="css/loja.css" rel="stylesheet">
     </head>
-    <h1>
-        Bom Dia!!
-    </h1>
+    <body>
+        <div class="conteiner">
+            <div class="principal">
+                <h1> Bom Dia!! </h1>
+            </div>
+        </div>
+    </body>
 </html>
