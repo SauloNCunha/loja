@@ -1,15 +1,2 @@
-<html>
-    <head>
-        <title> Minha Loja</title>
-        <meta charset="utf-8">
-        <link href="css/bootstrep.css" rel="stylesheet">
-        <link href="css/loja.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="conteiner">
-            <div class="principal">
+<?php include("cabecaçho.php") ?>
                 <h1> Bom Dia!! </h1>
-            </div>
-        </div>
-    </body>
-</html>

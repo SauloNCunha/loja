@@ -1,4 +1,4 @@
-<html>
+<html> 
     <head>
         <title> Minha Loja</title>
         <meta charset="utf-8">
@@ -7,12 +7,15 @@
     </head>
     <body>
         <div class="conteiner">
-            <?php
-            $nome = $_GET["nome"];
-            $preco = $_GET["preco"];
-            ?>
-            
-            Produto <?= $nome; ?> no valor de <?= $preco ;?>adicionado com sucesso!
+            <div class="principal">
+                <?php
+                   $nome = $_GET["nome"];
+                   $preco = $_GET["preco"];
+                 ?>          
+                <p class="alert-success">
+                    Produto <?= $nome; ?>, <?= $preco; ?> adicionado com sucesso!
+                </p>  
+            </div>
         </div>
     </body>
 </html>
