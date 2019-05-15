@@ -5,8 +5,8 @@
 ?>
 <table class="table">
     <tr>
-        <td>Descrição</td>
-        <td>Preço</
+        <td align="center">Descrição</td>
+        <td align="center">Preço</
     </tr>
     <?php
         $produtos  = listaProdutos($conexao);
@@ -14,7 +14,7 @@
     ?>  
         <tr>
             <td><?= $produto['nome'] ?></td>
-            <td><?= $produto['preco'] ?></td>
+            <td align="right"><?= $produto['preco'] ?></td>
         </tr>
         <?php
         }
