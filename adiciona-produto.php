@@ -9,7 +9,9 @@ $preco = $_GET["preco"];
 
 if(insereProduto($conexao, $nome, $preco)) { ?>
     <p class="text-success">O produto <?= $nome; ?>, <?= $preco; ?> adicionado com sucesso!</p>
-<?php } else {
+    
+<?php header("Location: produto-lista.php");
+} else {
     $msg = mysqli_error($conexao);
 ?>
     <p class="text-danger">O produto <?= $nome; ?> não foi adicionado: <?= $msg ?></p>
