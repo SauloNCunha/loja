@@ -1,23 +1,20 @@
-<?php 
-    include("cabecalho.php");
-    include("conecta.php"); 
-    include("banco-produto.php"); 
-?>
-<table class="table">
+<?php include("cabecalho.php");
+      include("conecta.php");
+      include("banco-produto.php"); ?>
+
+<table class="table table-striped table-bordered">
+
+    <?php
+        $produtos = listaProdutos($conexao);
+        foreach($produtos as $produto) :
+    ?>
     <tr>
-        <td align="center">Descrição</td>
-        <td align="center">Preço</
+        <td><?= $produto['nome'] ?></td>
+        <td><?= $produto['preco'] ?></td>
     </tr>
     <?php
-        $produtos  = listaProdutos($conexao);
-        foreach($produtos as $produto){ 
-    ?>  
-        <tr>
-            <td><?= $produto['nome'] ?></td>
-            <td align="right"><?= $produto['preco'] ?></td>
-        </tr>
-        <?php
-        }
-        ?>
+        endforeach
+    ?>
 </table>
+
 <?php include("rodape.php"); ?>

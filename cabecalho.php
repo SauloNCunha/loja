@@ -6,18 +6,21 @@
     <link href="css/loja.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="navbar navbar-inverse navbar-fixed-top" id="navbarSupportedContent">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.php" class="navbar-brand">Minha Loja</a>
+            </div>
+            <div>
                 <ul class="nav navbar-nav">
-                    <li><a class="navbar-brand" href="index.php">Minha Loja</a> </li>
-                    <li><a class="navbar-brand" href="produto-formulario.php">Adiciona Produto</a></li>
-                    <li><a class="navbar-brand" href="produto-lista.php">Lista de Produtos</a></li>
-                    <li><a class="navbar-brand" href="sobre.php">Sobre</a></li>
+                    <li><a href="produto-formulario.php">Adiciona Produto</a></li>
+                    <li><a href="produto-lista.php">Produtos</a></li>
+                    <li><a href="sobre.php">Sobre</a></li>
                 </ul>
             </div>
-        </nav>
-    </div> 
+        </div>
+    </div>
+
     <div class="container">
 
-        <div class="principal">
+    <div class="principal">
